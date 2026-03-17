@@ -13,7 +13,12 @@ import lombok.Setter;
 @Setter
 @Getter
 public class UserAccounts {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-       private Long id;
-
+    @Id private String id;
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String addressId;
+    private String mobile;
+    private String avatar;
+    private String pinCode;
 }

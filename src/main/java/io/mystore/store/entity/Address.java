@@ -10,12 +10,10 @@ import lombok.*;
 @Setter
 @Getter
 public class Address {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-       private Long id;
-       private Long orderId;
-       private String address;
-       private String city;
-       private String postalCode;
-       private String country;
-       private Double price;
+    @Id private String id;
+    private String userId;
+    private String address;
+    private String city;
+    private String postalCode;
+    private String country;
 }
