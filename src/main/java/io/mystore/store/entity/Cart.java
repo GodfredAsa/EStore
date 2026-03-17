@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Table(name = "carts")
 @AllArgsConstructor
@@ -13,7 +15,10 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Cart {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-       private Long id;
-
+    @Id
+    private String id;
+    private String userId;
+    private String productId;
+    private Double totalPrice;
+    private int qty;
 }

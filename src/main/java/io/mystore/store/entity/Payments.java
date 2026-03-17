@@ -1,5 +1,6 @@
 package io.mystore.store.entity;
 
+import io.mystore.store.enumeration.PaymentType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,7 +14,10 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Payments {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-       private Long id;
-
+    @Id private String id;
+    private String paidBy;
+    private Double paymentAmount;
+    private PaymentType paymentType;
+    private String paymentDate;
+    private String orderCode;
 }

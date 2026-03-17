@@ -13,8 +13,7 @@ public class BasicController {
 
     @GetMapping("/address")
     public ApiResponse<Address> getShippingAddress(){
-        Address address =  new Address(1L, 2L, "Nima", "Accra", "00233", "Ghana", 230.20);
-        System.out.println(address);
+        Address address = new Address("1L", "2L", "Nima", "Accra", "00233", "Ghana");
         return  new ApiResponse<>("Get All Address", HttpStatus.OK.value(), address);
     }
 }

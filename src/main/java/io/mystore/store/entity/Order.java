@@ -13,6 +13,9 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Order {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-       private Long id;
+    @Id private String id;
+    private String orderCode;
+    private String userId;
+    private String cartId;
+    private Double price;
 }

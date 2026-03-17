@@ -12,8 +12,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-public class Categories {
-    @Id @GeneratedValue(strategy = GenerationType.AUTO)
-       private Long id;
-
+public class Category {
+    @Id private String id;
+    private String name; // name should be unique, change to lower case before comparing.
+    private String description;
 }
