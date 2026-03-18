@@ -12,7 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-public class UserAccounts {
+public class UserAccount {
     @Id private String id;
     private String firstName;
     private String lastName;

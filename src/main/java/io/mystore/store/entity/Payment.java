@@ -13,7 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Setter
 @Getter
-public class Payments {
+public class Payment {
     @Id private String id;
     private String paidBy;
     private Double paymentAmount;
